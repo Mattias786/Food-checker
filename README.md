@@ -6,10 +6,7 @@ A mobile app that uses AI to evaluate the nutritional quality and environmental 
 When going to the shops, many people have good intentions in regards to buying healthily and sustainibly. Although some would say "Well thats easy. Read the various packages and compare the options", but as we all know it is not that simple. Changing dietary habits is challenging due to ingrained behaoivors, misinformation, and marketing manipultion. Whilst movements like buy wholefoods and "eat local" are gaining traction, a major information gap persists in how accessible and actionable the data is at point of puchase. 
 [Insert photo: 1st image - product that is generaly considered healthy 2nd image - comparison product. Show metrics on both products and show true disparity in stats of each]
 Example to use: white supermaker bread (Hovis) and sourdough bread (Jasons)
-![Uploading Screenshot 2025-06-26 at 22.28.03.png…]()
-![Uploading Screenshot 2025-06-26 at 22.28.03.png…]()
-![Uploading Screenshot 2025-06-26 at 22.28.03.png…]()
-![Uploading Screenshot 2025-06-26 at 22.28.03.png…]()
+
 
 # How is it used?
 Users would scan a food product’s barcode in-store. The app then:
