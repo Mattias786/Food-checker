@@ -22,20 +22,34 @@ Users would scan a food product’s barcode in-store. The app then:
 Users could create unique profiles with their specific dietary needs and aspirations, for example macro-nutrients could be filtred based on: low calorie (weight loss), vegan, sodium interance, glucose sensitivitity (perfect for Diabetics), high fat low sugars (in line with keto diet), dair (lactose intolerant or skin concerns), IBS and so on.
 
 # Data sources and AI methods
-Data sources:
- - [Open Food Facts API](https://static.openfoodfacts.org/data/openfoodfacts-mongodbdump.gz) or [USDA FoodData Central](https://www.usda.gov/) for nutrition facts. 
- - Suplemented by contribution from users and brands that give us access to their products' data.
- - [Ethical consumer](https://www.ethicalconsumer.org/) or [Academic Lifecycle Assessment (LCA) datasets](https://ecochain.com/) for environmental impact.
- - Work with the [Environmental Working Group](https://www.ewg.org/).
+Data sources 
+1. Nutritional information sourced from:
+ - [Open Food Facts API](https://static.openfoodfacts.org/data/openfoodfacts-mongodbdump.gz) and [USDA FoodData Central](https://www.usda.gov/) for macro/micronutrient data.
+ - User and brand contributions to expand coverage, especially for independent or niche food producers not listed in global databases.
+2. Environmental impact data drawn from:
+ - [Ethical consumer](https://www.ethicalconsumer.org/), academic [Lifecycle Assessment (LCA)](https://ecochain.com/) databases, and publicly available product sustainability disclosures (e.g. packaging, emissions, origin).
+ - Potential collaboration with [Environmental Working Group (EWG)](https://www.ewg.org/) to bolster transparency and credibility, especially regarding additive safety and pesticide use.
 
-AI techniques:
- - Nutritional evaluation model based on established dietary guidelines. [needs to be more specific, which ML model will be used or at least trialled]]
- - [LLM] Text summarization for displaying nutritional pros/cons.
- - Environmental impact scoring using regression models and rule-based AI for traffic light categorization.
- - (Optional extension): Collaborative filtering for personalized suggestions.
+AI techniques 
+1. Nutritional scoring model trained via supervised learning (e.g. logistic regression, decision trees) using datasets labeled by healthfulness according to established dietary frameworks (e.g. WHO, NHS Eatwell Guide, Nutri-Score).
+ - These models classify foods into traffic-light tiers or percentile scores.
+ - With richer data, deep learning architectures (e.g. feedforward neural networks) could better model complex nutrient interactions (e.g. fiber-fat-sugar trade-offs).
+2. Nutritional label summarization powered by transformer-based LLMs (e.g. BERT, GPT).
+ - Converts dense ingredient and nutrition data into a user-friendly summary of pros and cons, prioritizing readability and time-to-decision.
+ - Could highlight red flags (e.g. high sugar, emulsifiers, allergen risks) in under 100 words.
+3. Environmental impact modeling via a hybrid of linear regression and rule-based AI:
+ - Predicts estimated carbon footprint, food miles, and packaging burden.
+ - Rule-based agents categorize outputs using a traffic-light system (e.g. "UK-grown + recyclable packaging = green", "Air-freighted + plastic = red").
+4. Personalization engine:
+ - Uses collaborative filtering, nearest-neighbor models, and eventually RNNs to track evolving dietary preferences (e.g. gluten-free, low-sodium, keto).
+ - Learns from user input and behavior to offer tailored scoring and suggestions.
+5. Product identification and matching:
+ - Begins with barcode scanning or text search linked to public APIs (e.g. Open Food Facts).
+ - Future development may explore CNN-based OCR/image models to recognize unscanned items via visual packaging cues.
 
-To show AI knowledge and learning from course use words like: Conveluted Neural Network, Reciprical Neural Network, Large Language Model, Agent, Neuron, Deep learning, Parameters, Data inputs, linear regression, logistic regression, vectors, nearest neighbour model, API's, transformers etc
-For example, a rough optimal route between selected places could be calculated using AI methods suitable for solving the Travelling Salesman Problem.
+
+
+
 
 # Challenges
 While the plan is straighforward and in theory the necessary data should be accessible, several potential roadblocks remain - remembering the principle 'garbage in, garbage out.'
