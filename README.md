@@ -63,7 +63,7 @@ Cultural variance: Food preferences and avilability vary by region; scoring must
 # What next?
  - Develop a proof-of-concept app using a sample dataset and barcode API.
  - Test user flows and core scoring functionality in real-world settings.
- - [Reach out to food labeling bodies, eco-label certifies, and ethical food producers to build trusted data partnerships.]
+ - Partner with trusted food labeling authorities, sustainability certifiers, and transparent food brands to improve data quality, build trust, and expand the app’s verified product coverage.
  - Explore future integration with online grocery stores, smart kitchen devices, or diet planning tools.
 
 # Acknowledgments
