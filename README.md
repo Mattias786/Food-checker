@@ -4,8 +4,33 @@ Building AI course project
 A mobile app that uses AI to evaluate the nutritional quality and environmental impact of food products. Shoppers can scan barcodes to receive a health score out of 100, a summary of nutritional pros and cons, and a traffic-light indicator for food mileage. The goal: empower consumers to make informed, sustainable dietary choices.
 # Background
 When going to the shops, many people have good intentions in regards to buying healthily and sustainibly. Although some would say "Well thats easy. Read the various packages and compare the options", but as we all know it is not that simple. Changing dietary habits is challenging due to ingrained behaoivors, misinformation, and marketing manipultion. Whilst movements like buy wholefoods and "eat local" are gaining traction, a major information gap persists in how accessible and actionable the data is at point of puchase. 
+![Jason Sourdough](https://github.com/user-attachments/assets/d71786f2-5910-4a16-a387-abba4da9ee56)
+![Hovis](https://github.com/user-attachments/assets/df317331-7dd9-4c67-a5b1-f87199163d9a)
+Per average slice
+Energy: ~517 kJ / 122 kcal 
+Fat: ~0.4 g (saturated 0.1 g) 
+Carbohydrates: ~23.4 g (sugars 1.3 g) 
+Fibre: ~1.5 g 
+Protein: ~5.4 g 
+Salt: ~0.49g 
+Ingredients: Wheat flour (with added calcium, iron, niacin, thiamin), water, yeast, salt, soya flour, preservative: E282 (calcium propionate), emulsifiers (E472e, E471, E481), rapeseed/palm oil, flour treatment agent (ascorbic acid) 
+Implications:
+ - Contains preservatives and multiple emulsifiers/stabilisers, typical of ultra‑processed products.
+ - Uses refined wheat flour and added vitamins/minerals to compensate for nutrient losses in processing.
+
+Per average slice
+Energy: ~395 kJ / 122 kcal 
+Fat: ~0.7 g (saturated 0.1 g) 
+Carbohydrates: ~17.9 g (sugars 1.4 g) 
+Fibre: ~1.0 g 
+Protein: ~3.5 g 
+Salt: ~0.36g 
+Ingredients: Wheat flour (fortified with calcium carbonate, iron, niacin, thiamin), rye flour, water, salt, fermented wheat flour (no added yeast, preservatives, or emulsifiers) 
+Implications:
+ - Made using a traditional 24‑hour fermentation process, relying solely on flour, water, salt, and sourdough starter.
+ - Free from artificial additives or preservatives, promoting a cleaner, minimally processed ingredient profile.
+
 [Insert photo: 1st image - product that is generaly considered healthy 2nd image - comparison product. Show metrics on both products and show true disparity in stats of each]
-Example to use: white supermaker bread (Hovis) and sourdough bread (Jasons)
 
 
 # How is it used?
@@ -13,7 +38,7 @@ Users would scan a food product’s barcode in-store. The app then:
  - Shows a health score (0-100) based on nutritional value.
  - Summarizes nutritional strengths/weaknesses.
  - Displays a traffic-light color (green/yellow/red) based on food miles or sustainability data.
-Users could create unique profiles with their specific dietary needs and aspirations, for example macro-nutrients could be filtred based on: low calorie (weight loss), vegan, sodium interance, glucose sensitivitity (perfect for Diabetics), high fat low sugars (in line with keto diet), dair (lactose intolerant or skin concerns) and so on.
+Users could create unique profiles with their specific dietary needs and aspirations, for example macro-nutrients could be filtred based on: low calorie (weight loss), vegan, sodium interance, glucose sensitivitity (perfect for Diabetics), high fat low sugars (in line with keto diet), dair (lactose intolerant or skin concerns), IBS and so on.
 
 # Data sources and AI methods
 Data sources:
