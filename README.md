@@ -4,34 +4,15 @@ Building AI course project
 A mobile app that uses AI to evaluate the nutritional quality and environmental impact of food products. Shoppers can scan barcodes to receive a health score out of 100, a summary of nutritional pros and cons, and a traffic-light indicator for food mileage. The goal: empower consumers to make informed, sustainable dietary choices.
 # Background
 When going to the shops, many people have good intentions in regards to buying healthily and sustainibly. Although some would say "Well thats easy. Read the various packages and compare the options", but as we all know it is not that simple. Changing dietary habits is challenging due to ingrained behaoivors, misinformation, and marketing manipultion. Whilst movements like buy wholefoods and "eat local" are gaining traction, a major information gap persists in how accessible and actionable the data is at point of puchase. 
-![Jason Sourdough](https://github.com/user-attachments/assets/d71786f2-5910-4a16-a387-abba4da9ee56)
-![Hovis](https://github.com/user-attachments/assets/df317331-7dd9-4c67-a5b1-f87199163d9a)
-Per average slice
-Energy: ~517 kJ / 122 kcal 
-Fat: ~0.4 g (saturated 0.1 g) 
-Carbohydrates: ~23.4 g (sugars 1.3 g) 
-Fibre: ~1.5 g 
-Protein: ~5.4 g 
-Salt: ~0.49g 
-Ingredients: Wheat flour (with added calcium, iron, niacin, thiamin), water, yeast, salt, soya flour, preservative: E282 (calcium propionate), emulsifiers (E472e, E471, E481), rapeseed/palm oil, flour treatment agent (ascorbic acid) 
-Implications:
- - Contains preservatives and multiple emulsifiers/stabilisers, typical of ultra‑processed products.
- - Uses refined wheat flour and added vitamins/minerals to compensate for nutrient losses in processing.
 
-Per average slice
-Energy: ~395 kJ / 122 kcal 
-Fat: ~0.7 g (saturated 0.1 g) 
-Carbohydrates: ~17.9 g (sugars 1.4 g) 
-Fibre: ~1.0 g 
-Protein: ~3.5 g 
-Salt: ~0.36g 
-Ingredients: Wheat flour (fortified with calcium carbonate, iron, niacin, thiamin), rye flour, water, salt, fermented wheat flour (no added yeast, preservatives, or emulsifiers) 
-Implications:
- - Made using a traditional 24‑hour fermentation process, relying solely on flour, water, salt, and sourdough starter.
- - Free from artificial additives or preservatives, promoting a cleaner, minimally processed ingredient profile.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/df317331-7dd9-4c67-a5b1-f87199163d9a" width="45%" style="margin-right: 10px;" />
+  <img src="https://github.com/user-attachments/assets/d71786f2-5910-4a16-a387-abba4da9ee56" width="45%" />
+</p>
 
-[Insert photo: 1st image - product that is generaly considered healthy 2nd image - comparison product. Show metrics on both products and show true disparity in stats of each]
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d375ca4a-78ed-48a9-b970-eb6f4b5facc6" style="width:100%; max-width:none;" />
+</p>
 
 # How is it used?
 Users would scan a food product’s barcode in-store. The app then:
@@ -42,9 +23,10 @@ Users could create unique profiles with their specific dietary needs and aspirat
 
 # Data sources and AI methods
 Data sources:
- - Open Food Facts API or USDA FoodData Central for nutrition facts. [Check how Yuka sources its nutritional data]
- - Environmental Working Group or academic lifecycle assessment datasets for environmental impact.
- - GS1 or other barcode databases for product information.
+ - [Open Food Facts API](https://static.openfoodfacts.org/data/openfoodfacts-mongodbdump.gz) or [USDA FoodData Central](https://www.usda.gov/) for nutrition facts. 
+ - Suplemented by contribution from users and brands that give us access to their products' data.
+ - [Ethical consumer](https://www.ethicalconsumer.org/) or [Academic Lifecycle Assessment (LCA) datasets](https://ecochain.com/) for environmental impact.
+ - Work with the [Environmental Working Group](https://www.ewg.org/).
 
 AI techniques:
  - Nutritional evaluation model based on established dietary guidelines. [needs to be more specific, which ML model will be used or at least trialled]]
