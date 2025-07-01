@@ -1,5 +1,4 @@
 # Food-checker
-Building AI course project
 Final project for the Building AI course
 
 ## Summary
