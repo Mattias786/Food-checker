@@ -1,4 +1,4 @@
-# Food-checker
+  # Food-checker
 Final project for the Building AI course
 
 ## Summary
@@ -58,13 +58,98 @@ Over time, the app learns user preferences to suggest healthier or more sustaina
  - Begins with barcode scanning or text search linked to public APIs.
  - Future development may explore CNN-based OCR/image models to scan packaging visually.
 
-## Challenges
-Data quality: Some products lack complete or reliable nutrition or origin data.
-Environmental complexity: Establishing food miles or processing impact can be tough without full supply chain visibility.
-User fatigue: For a pleasant UX the results must be near-instant and intuitive; otherwise the process risks feeling cumbersome or discouraging.
-Cultural variance: Food preferences and availability vary by region; scoring must be context-sensitive and inclusive. 
-Ethical Considerations: Food-Checker is designed to empower healthier choices through AI, but is not a diagnostic or medical tool. Ethical use, transparency, and respect for personal health data are imperative.
+## Code samples:
 
+Here you can see a couple of code snippets that illustrate how Food-Checker evaluates the nutritional quality of products — one using threshold logic for protein content, and another using a regression model to predict an overall nutrient-based health score.
+
+### Protein Scoring (Per 100g)
+
+This function evaluates how much protein a product contains per 100g and returns a component score plus a friendly explanation.
+
+    if protein_per_100g < 1:
+        return {
+            "score": 0,
+            "label": "Very Low",
+            "message": "Negligible protein content. Won’t contribute much nutritionally."
+        }
+    elif 1 <= protein_per_100g < 3:
+        return {
+            "score": 10,
+            "label": "Low",
+            "message": "Low protein – better when paired with a protein-rich food."
+        }
+    elif 3 <= protein_per_100g < 6:
+        return {
+            "score": 25,
+            "label": "Moderate",
+            "message": "Moderate protein – acceptable for snacks or side dishes."
+        }
+    elif 6 <= protein_per_100g < 10:
+        return {
+            "score": 40,
+            "label": "High",
+            "message": "High protein – good contribution to daily intake."
+        }
+    elif 10 <= protein_per_100g < 15:
+        return {
+            "score": 55,
+            "label": "Very High",
+            "message": "Very high in protein – ideal for recovery or active lifestyles."
+        }
+    else:
+        return {
+            "score": 65,
+            "label": "Extremely High",
+            "message": "Extremely protein-dense – best consumed in balance with other nutrients."
+        }
+
+Example:
+
+    greek_yogurt = score_protein_density(10.2)
+    print(greek_yogurt)
+
+    {
+      'score': 55,
+      'label': 'Very High',
+      'message': 'Very high in protein – ideal for recovery or active lifestyles.'
+    }
+    
+### Linear Regression – Predicting Nutrient-Based Health Score
+This simple regression model is trained on historical data to estimate a baseline health score using only numeric nutrients (e.g. sugar, fiber, fat, etc.). It’s just one piece of the overall scoring process — other factors like emulsifiers, organic status, and whole food content are handled separately.
+
+    from sklearn.linear_model import LinearRegression
+    import numpy as np
+
+    # Features: [sugar_g, fiber_g, saturated_fat_g, protein_g, sodium_mg]
+    
+    X = np.array([
+    [20, 1.5, 8, 2, 500],
+    [5, 4.2, 1, 7, 100],
+    [12, 2.0, 5, 3, 250]
+    ])
+
+    # Health scores labelled from expert data (e.g. Nutri-Score)
+    y = np.array([30, 85, 60])
+
+    model = LinearRegression()
+    model.fit(X, y)
+
+    # Predict for a new food item
+    new_product = np.array([[10, 3.5, 2, 6, 180]])
+    predicted_score = model.predict(new_product)
+
+    print(f"Estimated nutrient-based health score: {predicted_score[0]:.2f}")
+
+Output
+
+    Estimated nutrient-based health score: 72.46
+
+## Challenges
+ - Data quality: Some products lack complete or reliable nutrition or origin data.
+ - Environmental complexity: Establishing food miles or processing impact can be tough without full supply chain visibility.
+ - User fatigue: For a pleasant UX the results must be near-instant and intuitive; otherwise the process risks feeling cumbersome or discouraging.
+ - Cultural variance: Food preferences and availability vary by region; scoring must be context-sensitive and inclusive.
+ - Ethical Considerations: Food-Checker is designed to support healthier choices through AI — not to replace medical advice. It provides information, not prescriptions. 
 
 ## What next?
  - Develop a proof-of-concept app using a sample dataset and barcode API.
@@ -73,7 +158,7 @@ Ethical Considerations: Food-Checker is designed to empower healthier choices th
  - Explore future integration with online grocery stores, smart kitchen devices, or diet planning tools.
 
 ## Acknowledgments
-Services providing similar features already exist, such as [Yuka](https://yuka.io/en/), [NHS Health App](https://apps.apple.com/gb/app/nhs-food-scanner/id1182946415). However, these often rely on binary or low variable quality scoring, lack personalisation and sustinability analysis, and don't adapt to the user over time. Food-Checker aims to bridge those gaps by combining AI, user experience design, and trustworthy data to create a smarter, more ethical way to shop.
+Services providing similar features already exist, such as [Yuka](https://yuka.io/en/), [NHS Health App](https://apps.apple.com/gb/app/nhs-food-scanner/id1182946415). However, these often rely on binary or low variable quality scoring, lack personalisation and sustainability analysis, and don't adapt to the user over time. Food-Checker aims to bridge those gaps by combining AI, user experience design, and trustworthy data to create a smarter, more ethical way to shop.
 
 ## Demo
 Explore the prototype here: [FoodChecker](https://foodchecker.lovable.app/)
