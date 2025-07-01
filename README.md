@@ -1,5 +1,6 @@
 # Food-checker
 Building AI course project
+
 ## Summary
 A mobile app that uses AI to evaluate the nutritional quality and environmental impact of food products in real-time. Shoppers scan barcodes to receive a score out of 100, a plain language summary of nutritional pros and cons, and a traffic-light indicator for sustainability. The goal: empower consumers to make informed, personalised, and sustainable dietary choices effortlessly.
 
