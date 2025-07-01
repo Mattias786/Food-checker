@@ -60,12 +60,11 @@ Over time, the app learns user preferences to suggest healthier or more sustaina
 
 ## Challenges
 Data quality: Some products lack complete or reliable nutrition or origin data.
-
 Environmental complexity: Establishing food miles or processing impact can be tough without full supply chain visibility.
-
 User fatigue: For a pleasant UX the results must be near-instant and intuitive; otherwise the process risks feeling cumbersome or discouraging.
-
 Cultural variance: Food preferences and availability vary by region; scoring must be context-sensitive and inclusive. 
+Ethical Considerations: Food-Checker is designed to empower healthier choices through AI, but is not a diagnostic or medical tool. Ethical use, transparency, and respect for personal health data are imperative.
+
 
 ## What next?
  - Develop a proof-of-concept app using a sample dataset and barcode API.
@@ -75,8 +74,6 @@ Cultural variance: Food preferences and availability vary by region; scoring mus
 
 ## Acknowledgments
 Services providing similar features already exist, such as [Yuka](https://yuka.io/en/), [NHS Health App](https://apps.apple.com/gb/app/nhs-food-scanner/id1182946415). However, these often rely on binary or low variable quality scoring, lack personalisation and sustinability analysis, and don't adapt to the user over time. Food-Checker aims to bridge those gaps by combining AI, user experience design, and trustworthy data to create a smarter, more ethical way to shop.
-
-That said, Food-Checker is designed to empower healthier choices through AI, but is not a diagnostic or medical tool. Ethical use, transparency, and respect for personal health data are core to the approach.
 
 ## Demo
 Explore the prototype here: [FoodChecker](https://foodchecker.lovable.app/)
