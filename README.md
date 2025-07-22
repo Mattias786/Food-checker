@@ -152,8 +152,9 @@ Output
  - Cultural variation: Dietary norms and product availability differ widely across regions. Scoring and recommendations must remain flexible and inclusive to remain relevant globally.
  - Nutritional complexity: Nutrition is not one-size-fits-all. Food-Checker highlights patterns and potential red flags, but does not attempt to provide personalised dietary prescriptions.
  - Interpretation risks: Users may over-rely on a single score or assume higher numbers always mean "better." We mitigate this with contextual messaging and encourage balance over score-chasing.
- - Ethical boundaries: Food-Checker is a decision-support tool, not a medical authority. It is designed to complement, not replace, professional advice, cultural knowledge, and individual experience. 
-
+ - Ethical boundaries: Food-Checker is a decision-support tool, not a medical authority. It is designed to complement, not replace, professional advice, cultural knowledge, and individual experience.
+ - Privacy: All data on users' food choices and dietary needs will be stores in line with GDPR legislation.
+ 
 ## What next?
  - Develop a proof-of-concept app using a sample dataset and barcode API.
  - Test user flows and core scoring functionality in real-world settings.
