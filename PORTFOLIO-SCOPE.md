@@ -225,6 +225,16 @@ not to quietly build:
 
 ## 7. Publication criteria
 
+**Status as of 2026-07-12: all eight criteria below hold**, confirmed against
+the current copy in `index.html` and the research files. This is a
+proof-of-concept portfolio piece, not a production claim — the two former
+TODOS.md blockers (interview consent, source-verification checklist) are
+resolved/reclassified in TODOS.md and Section 8 below. The one standing
+precondition is environmental, not content-based: `private/` (containing the
+raw interview transcript PDF) must remain gitignored and untracked — verified
+clean via `git check-ignore` and `git log --all --full-history` as part of
+this update, and must stay that way on every future commit.
+
 The site does not go live until every one of these holds:
 
 1. **Interview evidence is described exactly as it is.** Exactly four individual
@@ -255,21 +265,33 @@ The site does not go live until every one of these holds:
 
 Ranked by what would most damage credibility if a sharp reader pressed on it.
 
-**High — must close before publishing:**
-- Interview consent for anonymised/paraphrased public use is not explicitly
-  confirmed outside the private transcripts. Confirm and document before any
-  interview content goes live, even paraphrased.
+**Resolved 2026-07-12 (previously High — must close before publishing):**
+- ~~Interview consent for anonymised/paraphrased public use is not explicitly
+  confirmed outside the private transcripts.~~ **Confirmed** for all four
+  participants (P01–P04); see `research/PUBLIC-INTERVIEW-SUMMARY.md`'s
+  "Consent status" section.
 - The three unverified incumbent-criticism claims (S10–S12) are drafted nowhere
   near the site yet, but the temptation to reach for them during writing is real
   since they'd strengthen the hook. The case does not need them — S5 alone is
   airtight and neutral. Treat reaching for S10–S12 as a stop-and-check moment.
+  Confirmed absent from the published copy as of the 2026-07-12 `/qa` pass.
 
-**Medium — should close, doesn't block a first draft:**
+**Reclassified 2026-07-12 — optional future refinement, non-blocking (previously
+"Medium"):**
+
+This proof-of-concept already carries its credibility through the existing
+evidence pack, inline citations, and the verified/inferred/excluded labelling
+system, applied honestly to every load-bearing claim. The items below would
+tighten individual citations further; none of them are required for that
+mechanism to hold, so none block publication. Revisit opportunistically.
+
 - Yuka's actual score for this product has not been scanned; the "same good score
-  reaches both shoppers" claim currently rests on inference from the published
-  method, not a live scan. Scan it, or keep the inference label prominent.
+  reaches both shoppers" claim rests on inference from the published method, not
+  a live scan — and the site already keeps that inference label prominent and
+  explicit rather than presenting it as a measured number, which is exactly the
+  fallback this risk allowed for.
 - A second-database cross-check (Open Food Facts) on GTIN 5010044000404 hasn't
-  been done. Manufacturer data is primary and sufficient, but cheap to add.
+  been done. Manufacturer data is primary and sufficient, but cheap to add later.
 - S3 (SACN 30g/day) and S4 (EU claim-threshold Annex) haven't had their exact
   wording pulled and quoted — currently cited by topic and body, not by quote.
 - S9 (Sweller 1988) accessibility hasn't been confirmed this session; the 2011
@@ -374,8 +396,20 @@ tracking the content-verification work in TODOS.md, not by cutting either.
 
 **VERDICT:** Eng Review + Design Review CLEARED (PLAN) — ready to implement.
 CEO Review has no logged entry but its scope work is preserved in this
-document's body — no re-run needed unless scope itself changes. Two TODOS.md
-items are hard blockers before *publication* (not before implementation):
-interview consent confirmation and the source-verification checklist.
+document's body — no re-run needed unless scope itself changes.
+
+**Publication status — updated 2026-07-12:** both former TODOS.md hard
+blockers are closed. Interview consent for anonymised, paraphrased use is
+confirmed for all four participants. The source-verification checklist is
+reclassified as an optional future refinement, not a publication gate — this
+is a proof-of-concept portfolio piece and the evidence pack, citations, and
+verified/inferred/excluded labelling already carry its credibility honestly.
+Colour-blindness simulation is dropped as a blocker (evidence-status tags are
+never colour-only — see Section 4); real rendered contrast ratios were
+confirmed via `/qa` (CTA 4.74:1, inferred-text 4.505:1, both clear AA). The
+Yuka-outcome wording stays as inferred-not-observed, per Section 7 criterion
+4 — unchanged. **No remaining blockers to publishing this proof-of-concept
+site**, provided `private/` stays gitignored and untracked (verified clean;
+see Section 7).
 
 NO UNRESOLVED DECISIONS

@@ -57,13 +57,14 @@ Do not cite a larger number unless a separate, actually-documented log is produc
 
 ## Consent status
 
-- **Anonymised, paraphrased use:** not explicitly recorded in the transcripts as
-  supplied. Confirm this has been separately agreed with each participant before
-  public use, if it has not been already.
+- **Anonymised, paraphrased use:** **confirmed 2026-07-12** for all four
+  participants (P01–P04), separately from the transcripts as supplied. This
+  closes the consent question for the public case study as written — which
+  uses paraphrase only, never a direct quote.
 - **Direct quotation:** not recorded for any of the four. Treat as **not confirmed**
   for all four participants. No direct quotations are used in this document for that
-  reason. If direct quotes are wanted for the published case study, obtain and
-  document explicit per-participant consent to quote first.
+  reason, and none are needed — if direct quotes are ever wanted for a future
+  revision, obtain and document explicit per-participant consent to quote first.
 
 ## Anonymisation applied
 
@@ -119,10 +120,11 @@ remote video, telephone, and in-person formats.*
 
 ## Open items before publishing
 
-- Confirm and document consent for anonymised, paraphrased use of each of the four
-  interviews, if not already obtained outside these transcripts.
+- ~~Confirm and document consent for anonymised, paraphrased use of each of the
+  four interviews.~~ **Done 2026-07-12** — confirmed for all four participants.
 - Confirm whether any participant has separately agreed to direct quotation. Until
-  documented, continue to treat all four as paraphrase-only.
+  documented, continue to treat all four as paraphrase-only. (Not required for the
+  current case study, which uses no direct quotes.)
 - Confirm and document the actual recruitment method before stating it publicly.
 - If a participant count is used publicly, it must be **four** — not "dozens," not
   any other figure — unless a separate, actually-documented interview log is produced.
