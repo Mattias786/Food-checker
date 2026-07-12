@@ -629,6 +629,10 @@ footer.site-footer {
     grid-template-columns: 1fr;
   }
 
+  .verdict-card[data-focused="false"] {
+    display: none;
+  }
+
   .evidence-table thead {
     display: none;
   }
