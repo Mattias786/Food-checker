@@ -1,0 +1,8 @@
+{
+  "name": "food-checker-case-study",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test js/"
+  }
+}

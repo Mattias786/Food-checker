@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Food-Checker — A Behavioural Science Case Study</title>
+<meta name="description" content="Why a generic barcode-scanning score can't tell two shoppers apart — a behavioural diagnosis, an intervention design, and one real product whose verdict flips depending on who's asking.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="no-js">
+<script>document.body.classList.replace('no-js', 'js');</script>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="progress-bar" role="navigation" aria-label="Case study progress">
+  <a class="progress-bar__segment" href="#diagnostic-hook" data-step="diagnostic-hook" aria-label="Jump to: Diagnostic hook"></a>
+  <a class="progress-bar__segment" href="#behavioural-diagnosis" data-step="behavioural-diagnosis" aria-label="Jump to: Behavioural diagnosis"></a>
+  <a class="progress-bar__segment" href="#intervention-design" data-step="intervention-design" aria-label="Jump to: Intervention design"></a>
+  <a class="progress-bar__segment" href="#evidence" data-step="evidence" aria-label="Jump to: Evidence"></a>
+  <a class="progress-bar__segment" href="#scope-limitations" data-step="scope-limitations" aria-label="Jump to: Scope and limitations"></a>
+</div>
+
+<nav class="progress-rail" aria-label="Case study progress">
+  <a href="#diagnostic-hook" data-step="diagnostic-hook"><span class="dot" aria-hidden="true"></span><span class="label">Diagnostic hook</span></a>
+  <a href="#behavioural-diagnosis" data-step="behavioural-diagnosis"><span class="dot" aria-hidden="true"></span><span class="label">Behavioural diagnosis</span></a>
+  <a href="#intervention-design" data-step="intervention-design"><span class="dot" aria-hidden="true"></span><span class="label">Intervention design</span></a>
+  <a href="#evidence" data-step="evidence"><span class="dot" aria-hidden="true"></span><span class="label">Evidence</span></a>
+  <a href="#scope-limitations" data-step="scope-limitations"><span class="dot" aria-hidden="true"></span><span class="label">Scope &amp; limitations</span></a>
+</nav>
+
+<header class="hero reading-column">
+  <p class="hero__eyebrow">Behavioural science case study</p>
+  <h1>One barcode. Two shoppers. Opposite verdicts.</h1>
+  <p class="hero__lede">Yuka scores every product the same way for every shopper. This case study diagnoses why that isn't enough, using a real product whose correct verdict depends entirely on who's asking — and designs the fix around the mechanism, not the symptom.</p>
+  <a class="hero__cta" href="#diagnostic-hook">Read the case study ↓</a>
+</header>
+
+<main id="main">
+
+<section id="diagnostic-hook" class="reveal">
+  <div class="reading-column">
+    <h2>1. The diagnostic hook</h2>
+    <p>By its own published method
+      <a class="citation citation--verified" data-cite="s5" href="#s5">[S5] <span class="citation__status">verified</span></a>,
+      Yuka scores a product on three fixed weights: 60% nutritional quality (calculated on a Nutri-Score basis), 30% additives — where a single high-risk additive caps the product at 49/100 — and a 10% organic bonus. It is a well-built tool: one science-based nutrition-and-additives signal, delivered instantly, to a wide audience.</p>
+    <p>It is also, by construction, identical for every user. The published method takes no input for an individual's dietary constraint — a diagnosed condition, an intolerance, a personal goal. That is not a failing; it is a design fact with one structural consequence, and it is the starting point for everything below. Food-Checker is not "better than Yuka." It targets a different step: Yuka evaluates the product, Food-Checker removes the personal-translation step that comes after.</p>
+  </div>
+</section>
+
+<section id="behavioural-diagnosis" class="reveal">
+  <div class="reading-column">
+    <h2>2. Behavioural diagnosis</h2>
+    <p><a class="citation citation--verified" data-cite="s6" href="#s6">[S6] <span class="citation__status">verified</span></a>
+      COM-B explains what a generic score does and doesn't fix. It gives the shopper Capability — an evaluation they couldn't compute themselves — and Opportunity — instant, in-store. It does not resolve Motivation-<em>in-context</em>: acting on a personal goal the score itself doesn't represent.</p>
+    <p>Dual-process theory
+      <a class="citation citation--verified" data-cite="s7" href="#s7">[S7] <span class="citation__status">verified</span></a>
+      <a class="citation citation--verified" data-cite="s8" href="#s8">[S8] <span class="citation__status">verified</span></a>
+      names why that gap persists. Reading a label against a personal constraint — "does this trigger my IBS, at this portion?" — is slow, deliberative reasoning. The shopper is doing it under fast, low-attention shopping conditions. A generic score doesn't remove that step; personalising the verdict does.</p>
+    <p>Cognitive load
+      <a class="citation citation--inferred" data-cite="s9" href="#s9">[S9] <span class="citation__status">inferred</span></a>
+      explains why the cost compounds. Holding a trigger list, scanning an ingredient list, and judging a dose threshold, all at the shelf, is real working-memory load — and it rises with every constraint stacked on top. This is the mechanism behind the interview-reported cost of "spending ages in store" (see Evidence, below).</p>
+  </div>
+</section>
+
+<section id="intervention-design" class="reveal">
+  <div class="reading-column">
+    <h2>3. Intervention design</h2>
+    <p>Two features map directly onto the two points of failure above, one for one — not a longer feature list, a targeted one.</p>
+    <p><strong>A personalised verdict</strong> removes the translation step entirely. The shopper's constraint is the input to the evaluation, not a mental step they have to perform afterwards on a generic score.</p>
+    <p><strong>A plain-language "why"</strong> behind every verdict addresses a need named independently by all four interview participants
+      <a class="citation citation--verified" data-cite="s13" href="#s13">[S13] <span class="citation__status">verified</span></a>:
+      not just a flag, but the reason for it. A flag with no reason just adds a new judgement call — it doesn't remove one.</p>
+  </div>
+</section>
+
+<section id="evidence" class="reveal">
+  <div class="reading-column">
+    <h2>4. Evidence</h2>
+    <p>Here is the mechanism made concrete, on one real, named product. Toggle between the two profiles below, or read both at once — both verdicts are shown by default; nothing here is hidden behind a click.</p>
+  </div>
+
+  <div class="wide-stage">
+    <div class="stage" id="comparison-stage" data-focus="all">
+      <div class="stage__product">
+        <div>
+          <h3>Warburtons Wholemeal Medium <span class="caption">(400g)</span></h3>
+          <p class="stage__product-meta">GTIN 5010044000404 &middot; 6.4g fibre / 100g &middot; first ingredient: wholemeal wheat flour</p>
+        </div>
+        <p class="stage__product-meta">Product data:
+          <a class="citation citation--verified" data-cite="s1" href="#s1">[S1] <span class="citation__status">verified</span></a>
+        </p>
+      </div>
+
+      <div class="stage__js-only profile-toggle" role="group" aria-label="Focus one profile">
+        <button type="button" data-focus-target="all" aria-pressed="true">Both profiles</button>
+        <button type="button" data-focus-target="high-fibre" aria-pressed="false">High-fibre goal</button>
+        <button type="button" data-focus-target="low-fodmap" aria-pressed="false">Low-FODMAP (IBS)</button>
+      </div>
+
+      <div class="verdict-grid">
+        <div class="verdict-card" id="verdict-high-fibre" data-verdict="good" data-focused="true">
+          <p class="verdict-card__profile">Profile A &middot; High-fibre goal</p>
+          <p class="verdict-card__label">Compatible</p>
+          <p class="verdict-card__reasoning">6.4g fibre per 100g meets the &ge;6g/100g threshold for a lawful "high fibre" claim
+            (<a class="citation citation--inferred" data-cite="s4" href="#s4">[S4] <span class="citation__status">inferred</span></a>),
+            supporting the UK SACN recommendation of 30g fibre per day
+            (<a class="citation citation--inferred" data-cite="s3" href="#s3">[S3] <span class="citation__status">inferred</span></a>).
+          </p>
+        </div>
+        <div class="verdict-card" id="verdict-low-fodmap" data-verdict="avoid" data-focused="true">
+          <p class="verdict-card__profile">Profile B &middot; Low-FODMAP (IBS)</p>
+          <p class="verdict-card__label">High-FODMAP at typical servings</p>
+          <p class="verdict-card__reasoning">Classified as high-FODMAP (fructans) at typical servings, per Monash University's public food list
+            (<a class="citation citation--verified" data-cite="s2" href="#s2">[S2] <span class="citation__status">verified</span></a>).
+            FODMAP content is dose-dependent; a smaller portion may be better tolerated.
+          </p>
+        </div>
+      </div>
+
+      <p class="stage__inference-note">Same barcode, opposite verdict — driven entirely by the shopper's constraint, not the product. By Yuka's own published method
+        (<a class="citation citation--verified" data-cite="s5" href="#s5">[S5] <span class="citation__status">verified</span></a>),
+        its Nutri-Score-based weighting rewards fibre and wholegrain content, so the same favourable score plausibly reaches both shoppers above. <strong>That direction is inferred from Yuka's published method, not from a scan of this specific product</strong> — it is not presented here as a measured score.</p>
+    </div>
+  </div>
+
+  <div class="reading-column">
+    <h3>The interview evidence</h3>
+    <p>Four individual, anonymised interviews
+      <a class="citation citation--verified" data-cite="s13" href="#s13">[S13] <span class="citation__status">verified</span></a>
+      — not a survey, not a focus group — each describe the same friction from a different starting point: a self-observed skin-related avoidance pattern (P01, explicitly her own perceived pattern, not a clinical finding), a dietitian-derived IBS trigger list (P02), self-composed longevity principles (P03), and clinical pre-diabetes guidance (P04). All four independently describe label-reading that is slow and easy to get wrong, made harder by unfamiliar ingredient names, competing criteria, or dose-dependent thresholds.</p>
+    <p>These four interviews are <strong>formative, not representative</strong>. They illustrate that the same mechanism recurs across different starting points; they are not evidence of prevalence, market size, or clinical effectiveness of any diet. Full methodology in the <a href="#evidence-methodology">Evidence &amp; Methodology</a> appendix.</p>
+  </div>
+</section>
+
+<section id="scope-limitations" class="reveal">
+  <div class="reading-column">
+    <h2>5. Scope &amp; limitations</h2>
+    <p>Sustainability and environmental-impact scoring
+      <a class="citation citation--excluded" data-cite="ex1" href="#ex1">[EX1] <span class="citation__status">excluded</span></a>
+      is out of scope here. This is a data-reliability scoping cut, not a claim that sustainability falls outside the behavioural mechanism — sustainability trade-offs plausibly happen under the same at-the-shelf, high-load conditions as health trade-offs. It's excluded because the underlying data (food miles, lifecycle assessment, packaging) is too unreliable to build a credible intervention on, and mixing a data-reliability problem into a behavioural-friction argument would muddy both.</p>
+    <p>This case study makes no medical, clinical-effectiveness, prevalence, market-size, or willingness-to-pay claims. It is about decision friction at the point of purchase, not dietary advice.</p>
+  </div>
+</section>
+
+<section id="evidence-methodology" class="reveal">
+  <div class="reading-column">
+    <h2>Evidence &amp; methodology</h2>
+    <p id="back-to-study-wrap"><a class="back-to-study" id="back-to-study" href="#diagnostic-hook">&larr; Back to case study</a></p>
+    <p>Every load-bearing claim above is graded here as <strong>verified</strong> (checked directly against a primary or peer-reviewed source), <strong>inferred</strong> (supported, but with a caveat or a source not yet opened directly), or <strong>excluded</strong> (a deliberate scope cut, not a citation). Tapping or clicking any citation tag in the case study shows this entry inline; every entry is also a normal link, so the full register is readable with JavaScript switched off.</p>
+  </div>
+
+  <div class="wide-stage">
+    <table class="evidence-table">
+      <caption>Evidence register</caption>
+      <thead>
+        <tr><th>Tag</th><th>Status</th><th>Claim</th><th>Source</th></tr>
+      </thead>
+      <tbody>
+        <tr id="s1" data-status="verified">
+          <td data-label="Tag">[S1]</td>
+          <td data-label="Status"><span class="status-pill">verified</span></td>
+          <td data-label="Claim">Warburtons Wholemeal Medium (400g) contains 6.4g fibre per 100g and lists wholemeal wheat flour as its first ingredient; the manufacturer markets it as "high in fibre."</td>
+          <td data-label="Source">Warburtons Ltd, official product page (accessed 12 July 2026). <a href="https://www.warburtons.co.uk/products/breakfast/bread/wholemeal-medium-400g/">warburtons.co.uk</a></td>
+        </tr>
+        <tr id="s2" data-status="verified">
+          <td data-label="Tag">[S2]</td>
+          <td data-label="Status"><span class="status-pill">verified</span></td>
+          <td data-label="Claim">Monash University classifies wholemeal wheat bread as high-FODMAP (fructans) at typical servings.</td>
+          <td data-label="Source">Monash University, "High and low FODMAP foods" (accessed 12 July 2026). <a href="https://www.monashfodmap.com/about-fodmap-and-ibs/high-and-low-fodmap-foods/">monashfodmap.com</a></td>
+        </tr>
+        <tr id="s3" data-status="inferred">
+          <td data-label="Tag">[S3]</td>
+          <td data-label="Status"><span class="status-pill">inferred</span></td>
+          <td data-label="Claim">UK guidance recommends 30g of dietary fibre per day for adults.</td>
+          <td data-label="Source">SACN, <em>Carbohydrates and Health</em>, Public Health England (2015). <a href="https://www.gov.uk/government/publications/sacn-carbohydrates-and-health-report">gov.uk</a> — topic and body confirmed; exact recommendation wording not yet quoted directly from the report.</td>
+        </tr>
+        <tr id="s4" data-status="inferred">
+          <td data-label="Tag">[S4]</td>
+          <td data-label="Status"><span class="status-pill">inferred</span></td>
+          <td data-label="Claim">A "high fibre" claim on a packaged food is lawful in GB/EU law only at &ge;6g fibre per 100g.</td>
+          <td data-label="Source">Regulation (EC) No 1924/2006 on nutrition and health claims, Annex (retained in GB law). <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006R1924">eur-lex.europa.eu</a> — well established; exact Annex wording not independently re-verified this session.</td>
+        </tr>
+        <tr id="s5" data-status="verified">
+          <td data-label="Tag">[S5]</td>
+          <td data-label="Status"><span class="status-pill">verified</span></td>
+          <td data-label="Claim">Yuka scores a product as 60% nutritional quality (Nutri-Score based) + 30% additives (one high-risk additive caps the score at 49/100) + 10% organic bonus, computed identically for every user.</td>
+          <td data-label="Source">Yuka, "How are food products rated?" (accessed 12 July 2026). <a href="https://help.yuka.io/l/en/article/ijzgfvi1jq-how-are-food-products-scored">help.yuka.io</a></td>
+        </tr>
+        <tr id="s6" data-status="verified">
+          <td data-label="Tag">[S6]</td>
+          <td data-label="Status"><span class="status-pill">verified</span></td>
+          <td data-label="Claim">COM-B (Capability, Opportunity, Motivation &rarr; Behaviour) is a validated model at the hub of the Behaviour Change Wheel.</td>
+          <td data-label="Source">Michie, van Stralen &amp; West, <em>Implementation Science</em>, 2011;6:42. <a href="https://implementationscience.biomedcentral.com/articles/10.1186/1748-5908-6-42">DOI 10.1186/1748-5908-6-42</a></td>
+        </tr>
+        <tr id="s7" data-status="verified">
+          <td data-label="Tag">[S7]</td>
+          <td data-label="Status"><span class="status-pill">verified</span></td>
+          <td data-label="Claim">Dual-process theory distinguishes fast/automatic (Type 1) from slow/deliberative (Type 2) cognition.</td>
+          <td data-label="Source">Evans &amp; Stanovich, <em>Perspectives on Psychological Science</em>, 2013;8(3):223&ndash;241. <a href="https://journals.sagepub.com/doi/10.1177/1745691612460685">DOI 10.1177/1745691612460685</a></td>
+        </tr>
+        <tr id="s8" data-status="verified">
+          <td data-label="Tag">[S8]</td>
+          <td data-label="Status"><span class="status-pill">verified</span></td>
+          <td data-label="Claim">The accessible System 1 / System 2 framing of dual-process cognition, used here as the non-specialist reference for the same theory as [S7].</td>
+          <td data-label="Source">Kahneman, <em>Thinking, Fast and Slow</em>, Farrar, Straus and Giroux, 2011. ISBN 9780374275631.</td>
+        </tr>
+        <tr id="s9" data-status="inferred">
+          <td data-label="Tag">[S9]</td>
+          <td data-label="Status"><span class="status-pill">inferred</span></td>
+          <td data-label="Claim">Cognitive load theory: working memory is limited, and performance degrades as load rises.</td>
+          <td data-label="Source">Sweller, <em>Cognitive Science</em>, 1988;12(2):257&ndash;285. <a href="https://onlinelibrary.wiley.com/doi/10.1207/s15516709cog1202_4">DOI 10.1207/s15516709cog1202_4</a> — direct accessibility of the 1988 original not confirmed this session; Sweller, Ayres &amp; Kalyuga (2011) is a ready substitute if paywalled.</td>
+        </tr>
+        <tr id="s13" data-status="verified">
+          <td data-label="Tag">[S13]</td>
+          <td data-label="Status"><span class="status-pill">verified</span></td>
+          <td data-label="Claim">Four individual, anonymised interviews (P01&ndash;P04) illustrate a recurring decision-friction mechanism across four different dietary contexts. Formative, not representative; no direct quotations (consent to quote was not recorded).</td>
+          <td data-label="Source">This project's own primary research: private interview transcripts and an anonymised public summary. Not published in full to protect participant anonymity.</td>
+        </tr>
+        <tr id="ex1" data-status="excluded">
+          <td data-label="Tag">[EX1]</td>
+          <td data-label="Status"><span class="status-pill">excluded</span></td>
+          <td data-label="Claim">Sustainability / environmental-impact scoring is out of scope for this case study.</td>
+          <td data-label="Source">Scoping decision, not a source: the underlying data (food miles, lifecycle assessment, packaging) is too unreliable to build a credible intervention on. Not a claim that sustainability sits outside the behavioural mechanism.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="reading-column">
+    <h3>Interview methodology</h3>
+    <p>Four individual, one-to-one interviews, each covering one person's food-shopping behaviour around one personal dietary constraint or goal. They are formative, not representative: they show that a friction recurs across different starting points, not how common it is, how many people would want a fix, or whether any diet is clinically effective. No participant is quoted directly — consent to quote was not recorded in the source transcripts — so everything above is paraphrase. Each participant is anonymised as P01&ndash;P04.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer" id="about">
+  <div class="reading-column">
+    <h2>About this project</h2>
+    <p>This is a personal portfolio case study in applied behavioural science: a worked example of diagnosing a real, sourced gap in a market-leading product and designing an intervention that targets the mechanism, not the symptom. It is not a funded venture, and it is not a claim that Food-Checker is superior to any incumbent product.</p>
+    <p><strong>Independence:</strong> this project is independent and is not affiliated with, sponsored by, or representing any employer or consultancy. The visual identity and case study on this page are original to this project.</p>
+    <p>Get in touch: <a href="mailto:mattiasmc@icloud.com">mattiasmc@icloud.com</a></p>
+  </div>
+</footer>
+
+<script type="module" src="js/comparison.js"></script>
+<script type="module" src="js/citations.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
