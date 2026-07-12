@@ -500,6 +500,11 @@ button:focus-visible,
   display: none;
 }
 
+.no-js .reveal {
+  opacity: 1;
+  transform: none;
+}
+
 /* Evidence & methodology appendix */
 
 .evidence-table {
